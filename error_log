@@ -1,0 +1,4 @@
+[25-Jul-2021 00:19:41 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/ecinscom/public_html/wp-content/themes/sixheads-ecins/index.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/ecinscom/public_html/wp-content/themes/sixheads-ecins/index.php on line 16

@@ -1,0 +1,102 @@
+{
+    "key": "group_6000c836275ef",
+    "title": "News Introduction",
+    "fields": [
+        {
+            "key": "field_6000c84bf7004",
+            "label": "Hero Image",
+            "name": "hero_image_news",
+            "type": "image",
+            "instructions": "Add the background image for the hero. Size: 2200px wide by 640px high.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "60",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_6000c892f7005",
+            "label": "Hero Title",
+            "name": "hero_title_news",
+            "type": "text",
+            "instructions": "Add a title to this hero banner.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "40",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "News",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6000c8d1f7006",
+            "label": "Page Intro",
+            "name": "page_intro_news",
+            "type": "textarea",
+            "instructions": "Add a page intro for the News.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 4,
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_6000c90ff7007",
+            "label": "Video",
+            "name": "video_news",
+            "type": "oembed",
+            "instructions": "Add an optional video to the News. This will appear above the feed of articles. Leave the field blank to hide this module. (First upload the video to YouTube\/Vimeo account then copy the video link and paste in here. This will allow the video to be played directly within the page.)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "width": "",
+            "height": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-news"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Add hero banner, page intro and optional video to News.",
+    "modified": 1610664519
+}

@@ -1,0 +1,40 @@
+{
+    "key": "group_6000c3f62ba39",
+    "title": "Client Login",
+    "fields": [
+        {
+            "key": "field_6000c418a3336",
+            "label": "Client Login Button",
+            "name": "client_login_button",
+            "type": "url",
+            "instructions": "Add the URL for the client login button. Leave blank to hide the button entirely.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-general-settings"
+            }
+        ]
+    ],
+    "menu_order": 20,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Adds link for login button in header",
+    "modified": 1610663264
+}

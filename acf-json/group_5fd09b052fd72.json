@@ -1,0 +1,170 @@
+{
+    "key": "group_5fd09b052fd72",
+    "title": "Products Module",
+    "fields": [
+        {
+            "key": "field_5fd09bffbd154",
+            "label": "Products Module",
+            "name": "products_module",
+            "type": "repeater",
+            "instructions": "This module is used to setup the products navigation on various pages. Here you also set a product colour & icon, add a short blurb and link to the product page for that particular product.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "field_5fd09c83bd155",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add Product",
+            "sub_fields": [
+                {
+                    "key": "field_5fd09c83bd155",
+                    "label": "Product Title",
+                    "name": "product_title",
+                    "type": "text",
+                    "instructions": "This it the main product title",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "Process referrals",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5fd09ca5bd156",
+                    "label": "Short Product Title",
+                    "name": "product_title_short",
+                    "type": "text",
+                    "instructions": "The shorter product title.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "Referral",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5fd09ee0bd157",
+                    "label": "Product Icon & Colour",
+                    "name": "product_icon",
+                    "type": "select",
+                    "instructions": "Sets the icon & colour.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "referral": "Referral",
+                        "cases": "Cases",
+                        "clients": "Clients",
+                        "community": "Community",
+                        "staff": "Staff"
+                    },
+                    "default_value": "referral",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_5fd09f97bd159",
+                    "label": "Product Overview",
+                    "name": "product_overview",
+                    "type": "textarea",
+                    "instructions": "Add a short overview of this product.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 4,
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_5fd09fc3bd15a",
+                    "label": "Product Link",
+                    "name": "product_link",
+                    "type": "page_link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "70",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "page"
+                    ],
+                    "taxonomy": "",
+                    "allow_null": 0,
+                    "allow_archives": 0,
+                    "multiple": 0
+                },
+                {
+                    "key": "field_5fd09ff0bd15b",
+                    "label": "Link Text",
+                    "name": "product_link_text",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "30",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Learn more",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-products"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Add the products module that sets icons, colour, link and short blurb",
+    "modified": 1614660508
+}

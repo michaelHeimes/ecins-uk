@@ -1,0 +1,102 @@
+{
+    "key": "group_6187fca4afc64",
+    "title": "Resources Introduction",
+    "fields": [
+        {
+            "key": "field_6187fca4c2162",
+            "label": "Hero Image",
+            "name": "hero_image_resources",
+            "type": "image",
+            "instructions": "Add the background image for the hero. Size: 2200px wide by 640px high.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "60",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_6187fca4c216c",
+            "label": "Hero Title",
+            "name": "hero_title_resources",
+            "type": "text",
+            "instructions": "Add a title to this hero banner.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "40",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Case Studies",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6187fca4c2178",
+            "label": "Page Intro",
+            "name": "page_intro_resources",
+            "type": "textarea",
+            "instructions": "Add a page intro for the Case Studies.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 4,
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_6187fca4c2188",
+            "label": "Video",
+            "name": "video_resources",
+            "type": "oembed",
+            "instructions": "Add an optional video to the Case Studies. This will appear above the feed of articles. Leave the field blank to hide this module. (First upload the video to YouTube\/Vimeo account then copy the video link and paste in here. This will allow the video to be played directly within the page.)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "width": "",
+            "height": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-resources"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Add hero banner, page intro and optional video to Case Studies.",
+    "modified": 1636306458
+}

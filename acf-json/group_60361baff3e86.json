@@ -1,0 +1,105 @@
+{
+    "key": "group_60361baff3e86",
+    "title": "Request eBook",
+    "fields": [
+        {
+            "key": "field_60361bb00bf7b",
+            "label": "Request eBook Title",
+            "name": "request_ebook_title",
+            "type": "text",
+            "instructions": "Add a title for the eBook section.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_60361bb00bff8",
+            "label": "Request eBook Intro",
+            "name": "request_ebook_intro",
+            "type": "wysiwyg",
+            "instructions": "Add a short intro to the request ebook form. It might describe how they will be emailed a link to the file once they fill in the form.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "60",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_603dcc99eddaa",
+            "label": "Request eBook Cover",
+            "name": "request_ebook_cover",
+            "type": "image",
+            "instructions": "Add a cover image: Size 800px wide",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "40",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_618c0ad2b25b9",
+            "label": "Request eBook Form Embed",
+            "name": "request_ebook_form_embed",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-ebook"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Add details for the Request a Demo form",
+    "modified": 1636567778
+}

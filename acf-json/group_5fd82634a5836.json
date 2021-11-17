@@ -1,0 +1,1813 @@
+{
+    "key": "group_5fd82634a5836",
+    "title": "Flexible Content Modules",
+    "fields": [
+        {
+            "key": "field_5fd82672504e3",
+            "label": "Flexible Content",
+            "name": "flexible_content",
+            "type": "flexible_content",
+            "instructions": "Add flexible content modules to the page. Includes: ...",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_5fd82680deffc": {
+                    "key": "layout_5fd82680deffc",
+                    "name": "hero_banner",
+                    "label": "Hero Banner",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5fd826c0504e4",
+                            "label": "Hero Image",
+                            "name": "hero_image",
+                            "type": "image",
+                            "instructions": "Add the background image for the hero. Size: 2200px wide by 640px high.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "60",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_5fd826e0504e5",
+                            "label": "Hero Title",
+                            "name": "hero_title",
+                            "type": "textarea",
+                            "instructions": "Add an alternative title to this hero banner or leave blank and just used the page title.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "40",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": 2,
+                            "new_lines": "br"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_603382a3c8d1c": {
+                    "key": "layout_603382a3c8d1c",
+                    "name": "video_banner",
+                    "label": "Video Banner",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_603382a3c8d1d",
+                            "label": "Video Link",
+                            "name": "video_link",
+                            "type": "url",
+                            "instructions": "Add the video link for the banner. We'll be using Cloudinary to host our videos so you need to upload it there first and grab the link from there.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_603382a3c8d1e",
+                            "label": "Video Still Image",
+                            "name": "video_poster",
+                            "type": "image",
+                            "instructions": "Add the fall back image for this video. This should be a screenshot from the start of the video as it generally loads first then gets removed when the video loads.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "url",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_605c40a402e8d": {
+                    "key": "layout_605c40a402e8d",
+                    "name": "simple_title_banner",
+                    "label": "Simple Title Banner",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_605c40af02e8e",
+                            "label": "Page Title",
+                            "name": "page_title",
+                            "type": "text",
+                            "instructions": "Add a simple page title instead of a banner image or video.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_605c40fc02e8f",
+                            "label": "Spacing",
+                            "name": "spacing",
+                            "type": "select",
+                            "instructions": "Add space before or after this module.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "none": "Remove all space before and after the module",
+                                "before": "Add space before the module",
+                                "after": "Add space after the module",
+                                "both": "Add space before and after the module"
+                            },
+                            "default_value": "none",
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "ajax": 0,
+                            "placeholder": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5fd82986a31d6": {
+                    "key": "layout_5fd82986a31d6",
+                    "name": "page_intro",
+                    "label": "Page Intro",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5fd85d59f4182",
+                            "label": "Content",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5fd829bba31d7",
+                            "label": "Page Intro",
+                            "name": "page_intro",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": 4,
+                            "new_lines": "wpautop"
+                        },
+                        {
+                            "key": "field_5fd85d74f4183",
+                            "label": "Settings",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5fd85d8af4184",
+                            "label": "Spacing",
+                            "name": "spacing",
+                            "type": "select",
+                            "instructions": "Add space before or after this module.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "none": "Remove all space before and after the module",
+                                "before": "Add space before the module",
+                                "after": "Add space after the module",
+                                "both": "Add space before and after the module"
+                            },
+                            "default_value": "none",
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5fd831a3b2887": {
+                    "key": "layout_5fd831a3b2887",
+                    "name": "rich_text",
+                    "label": "Rich Text",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5fd831adb2888",
+                            "label": "Rich Text",
+                            "name": "rich_text",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_5ffec7bf274ed",
+                            "label": "Spacing",
+                            "name": "spacing",
+                            "type": "select",
+                            "instructions": "Add space before or after this module.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "none": "Remove all space before and after the module",
+                                "before": "Add space before the module",
+                                "after": "Add space after the module",
+                                "both": "Add space before and after the module"
+                            },
+                            "default_value": "none",
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "ajax": 0,
+                            "placeholder": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5fd82ce8ed8e7": {
+                    "key": "layout_5fd82ce8ed8e7",
+                    "name": "products",
+                    "label": "Products",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5fd82cf0ed8e8",
+                            "label": "Show Products",
+                            "name": "products_show",
+                            "type": "select",
+                            "instructions": "Choose to show a simple products grid of icons and title or the detailed products grid. This pulls directly from the Theme Settings > Products section.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "simple": "Products Simple",
+                                "detailed": "Products Detailed"
+                            },
+                            "default_value": "simple",
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_5fd893f72bbab",
+                            "label": "Spacing",
+                            "name": "spacing",
+                            "type": "select",
+                            "instructions": "Add space before or after this module.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "none": "Remove all space before and after the module",
+                                "before": "Add space before the module",
+                                "after": "Add space after the module",
+                                "both": "Add space before and after the module"
+                            },
+                            "default_value": "none",
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "ajax": 0,
+                            "placeholder": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5fd835d53ea00": {
+                    "key": "layout_5fd835d53ea00",
+                    "name": "call_to_action",
+                    "label": "Call To Action",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5fd89f49be40b",
+                            "label": "Content",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5fd835e33ea01",
+                            "label": "CTA Title",
+                            "name": "cta_title",
+                            "type": "textarea",
+                            "instructions": "Add the short call to action title.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": 180,
+                            "rows": 2,
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_5fd836333ea02",
+                            "label": "CTA Button",
+                            "name": "cta_button",
+                            "type": "text",
+                            "instructions": "Add the text for the button",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "Read ECINS case studies",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5fd836553ea03",
+                            "label": "CTA Link",
+                            "name": "cta_link",
+                            "type": "page_link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": "",
+                            "taxonomy": "",
+                            "allow_null": 0,
+                            "allow_archives": 1,
+                            "multiple": 0
+                        },
+                        {
+                            "key": "field_5fd89f62be40c",
+                            "label": "Settings",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5fd89f70be40d",
+                            "label": "Spacing",
+                            "name": "spacing",
+                            "type": "select",
+                            "instructions": "Add space before or after this module.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "none": "Remove all space before and after the module",
+                                "before": "Add space before the module",
+                                "after": "Add space after the module",
+                                "both": "Add space before and after the module"
+                            },
+                            "default_value": "none",
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "ajax": 0,
+                            "placeholder": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5fd9411fb42a6": {
+                    "key": "layout_5fd9411fb42a6",
+                    "name": "list_columns",
+                    "label": "List Columns",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5fd941d3b42ab",
+                            "label": "Content",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5fd94127b42a7",
+                            "label": "Title",
+                            "name": "list_columns_title",
+                            "type": "text",
+                            "instructions": "Includes an optional title. Leave blank if not required.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5fd9414db42a8",
+                            "label": "Intro",
+                            "name": "list_columns_intro",
+                            "type": "textarea",
+                            "instructions": "Add a optional short intro. Leave blank if not required.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": 2,
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_5fd9418db42a9",
+                            "label": "List Primary",
+                            "name": "list_primary",
+                            "type": "wysiwyg",
+                            "instructions": "Add bullet point content to this column",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "visual",
+                            "toolbar": "basic",
+                            "media_upload": 0,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_5fd941b9b42aa",
+                            "label": "List Secondary",
+                            "name": "list_secondary",
+                            "type": "wysiwyg",
+                            "instructions": "Add bullet point content to this column",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "visual",
+                            "toolbar": "basic",
+                            "media_upload": 0,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_5fd9422fb42ac",
+                            "label": "Settings",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5fd94242b42ad",
+                            "label": "Spacing",
+                            "name": "spacing",
+                            "type": "select",
+                            "instructions": "Add space before or after this module.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "none": "Remove all space before and after the module",
+                                "before": "Add space before the module",
+                                "after": "Add space after the module",
+                                "both": "Add space before and after the module"
+                            },
+                            "default_value": "none",
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_5fd94261b42ae",
+                            "label": "List Style",
+                            "name": "list_style",
+                            "type": "select",
+                            "instructions": "Choose to use bullet points or ticks for these lists.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "bullet": "Bullet Point",
+                                "tick": "Tick"
+                            },
+                            "default_value": "bullet",
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "ajax": 0,
+                            "placeholder": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5fd95bbe94e46": {
+                    "key": "layout_5fd95bbe94e46",
+                    "name": "testimonials",
+                    "label": "Testimonials",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5fd95bd494e47",
+                            "label": "Show Testimonials",
+                            "name": "show_testimonials",
+                            "type": "true_false",
+                            "instructions": "Choose to show a random selection of testimonials in a slideshow on this page. The content for this is pulled from the Testimonials menu.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "Yes",
+                            "ui_off_text": "No"
+                        },
+                        {
+                            "key": "field_5fd95cb894e48",
+                            "label": "Spacing",
+                            "name": "spacing",
+                            "type": "select",
+                            "instructions": "Add space before or after this module.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "none": "Remove all space before and after the module",
+                                "before": "Add space before the module",
+                                "after": "Add space after the module",
+                                "both": "Add space before and after the module"
+                            },
+                            "default_value": "none",
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "ajax": 0,
+                            "placeholder": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6000daa3578d8": {
+                    "key": "layout_6000daa3578d8",
+                    "name": "demo",
+                    "label": "Request Demo",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6000daa3578d9",
+                            "label": "Show Request a Demo btn",
+                            "name": "show_demo",
+                            "type": "true_false",
+                            "instructions": "Choose to show the 'Request a demo' button on this page.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "Yes",
+                            "ui_off_text": "No"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5ffbc7919e92b": {
+                    "key": "layout_5ffbc7919e92b",
+                    "name": "offering_simple",
+                    "label": "Offering - Icons",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5ffbc9239e92e",
+                            "label": "Content",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5ffbc7b59e92c",
+                            "label": "Title",
+                            "name": "section_title",
+                            "type": "text",
+                            "instructions": "Optional title for this section. Leave blank if not required.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5ffbc9da9e931",
+                            "label": "Offerings",
+                            "name": "offerings",
+                            "type": "repeater",
+                            "instructions": "Add the different offerings for this module.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "block",
+                            "button_label": "Add Offering",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5ffbca019e932",
+                                    "label": "Icon",
+                                    "name": "icon",
+                                    "type": "select",
+                                    "instructions": "Choose from the available icons for this offering.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "30",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "shield-tick": "Tick",
+                                        "document": "Document",
+                                        "cloud": "Cloud",
+                                        "jigsaw": "Jigsaw",
+                                        "dollar": "Dollar",
+                                        "globe": "Globe",
+                                        "portrait": "Portrait",
+                                        "twenty": "Twenty",
+                                        "arrows-expand": "Expanding Arrows",
+                                        "trending-up": "Trending Up",
+                                        "heart": "Heart",
+                                        "finger-print": "Finger print",
+                                        "eye": "Eye",
+                                        "document-report": "Document Report",
+                                        "document-add": "Document Add",
+                                        "badge-tick": "Badge Tick",
+                                        "adjustments": "Adjustments",
+                                        "academic-cap": "Academic Cap",
+                                        "star": "Star",
+                                        "check-circle": "Tick in circle",
+                                        "newspaper": "Newspaper",
+                                        "presentation": "Presentation",
+                                        "share": "Share",
+                                        "ticket": "Ticket",
+                                        "user-add": "Add User",
+                                        "user-group": "User group",
+                                        "video": "Video"
+                                    },
+                                    "default_value": "shield-tick",
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "ui": 0,
+                                    "return_format": "value",
+                                    "ajax": 0,
+                                    "placeholder": ""
+                                },
+                                {
+                                    "key": "field_5ffe296b75df6",
+                                    "label": "Icon Text",
+                                    "name": "title",
+                                    "type": "textarea",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "70",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "maxlength": 100,
+                                    "rows": 2,
+                                    "new_lines": "br"
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_5ffbc9309e92f",
+                            "label": "Settings",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5ffbc9609e930",
+                            "label": "Spacing",
+                            "name": "spacing",
+                            "type": "select",
+                            "instructions": "Add space before or after this module.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "none": "Remove all space before and after the module",
+                                "before": "Add space before the module",
+                                "after": "Add space after the module",
+                                "both": "Add space before and after the module"
+                            },
+                            "default_value": "none",
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_5ffbc8049e92d",
+                            "label": "Background",
+                            "name": "background",
+                            "type": "select",
+                            "instructions": "Add a background colour for this section or leave white with dividing lines.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "color - Background Colour": "color - Background Colour",
+                                "lines - Dividing Lines": "lines - Dividing Lines"
+                            },
+                            "default_value": false,
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "ajax": 0,
+                            "placeholder": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5ffe662706fc0": {
+                    "key": "layout_5ffe662706fc0",
+                    "name": "offering_detailed",
+                    "label": "Offering - Detailed",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5ffe662706fc1",
+                            "label": "Content",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5ffe662706fc3",
+                            "label": "Offerings",
+                            "name": "offerings",
+                            "type": "repeater",
+                            "instructions": "Add the detailed offerings for this page.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "block",
+                            "button_label": "Add Detailed Offering",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5ffe662706fc4",
+                                    "label": "Icon",
+                                    "name": "icon",
+                                    "type": "select",
+                                    "instructions": "Choose from the available icons for this offering.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "30",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "shield-tick": "Tick",
+                                        "document": "Document",
+                                        "cloud": "Cloud",
+                                        "jigsaw": "Jigsaw",
+                                        "dollar": "Dollar",
+                                        "globe": "Globe",
+                                        "portrait": "Portrait",
+                                        "twenty": "Twenty",
+                                        "arrows-expand": "Expanding Arrows",
+                                        "trending-up": "Trending Up",
+                                        "heart": "Heart",
+                                        "finger-print": "Finger print",
+                                        "eye": "Eye",
+                                        "document-report": "Document Report",
+                                        "document-add": "Document Add",
+                                        "badge-tick": "Badge Tick",
+                                        "adjustments": "Adjustments",
+                                        "academic-cap": "Academic Cap",
+                                        "star": "Star",
+                                        "check-circle": "Tick in circle",
+                                        "newspaper": "Newspaper",
+                                        "presentation": "Presentation",
+                                        "share": "Share",
+                                        "ticket": "Ticket",
+                                        "user-add": "Add User",
+                                        "user-group": "User group",
+                                        "video": "Video"
+                                    },
+                                    "default_value": "shield-tick",
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "ui": 0,
+                                    "return_format": "value",
+                                    "ajax": 0,
+                                    "placeholder": ""
+                                },
+                                {
+                                    "key": "field_5ffe662706fc5",
+                                    "label": "Title",
+                                    "name": "title",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "70",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5ffe6660f26f5",
+                                    "label": "Details",
+                                    "name": "details",
+                                    "type": "wysiwyg",
+                                    "instructions": "Add the details for this offering. Use bullet points to create a two column list on larger screens.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "tabs": "all",
+                                    "toolbar": "basic",
+                                    "media_upload": 0,
+                                    "delay": 0
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_5ffe662706fc6",
+                            "label": "Settings",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5ffe662706fc7",
+                            "label": "Spacing",
+                            "name": "spacing",
+                            "type": "select",
+                            "instructions": "Add space before or after this module.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "none": "Remove all space before and after the module",
+                                "before": "Add space before the module",
+                                "after": "Add space after the module",
+                                "both": "Add space before and after the module"
+                            },
+                            "default_value": "none",
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_60036dad25654": {
+                    "key": "layout_60036dad25654",
+                    "name": "offering_product",
+                    "label": "Offering - Product",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_60036dae25655",
+                            "label": "Content",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_60036dae25656",
+                            "label": "Offerings",
+                            "name": "offerings",
+                            "type": "repeater",
+                            "instructions": "Add the offerings for this product.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "block",
+                            "button_label": "Add Detailed Offering",
+                            "sub_fields": [
+                                {
+                                    "key": "field_60036dae25657",
+                                    "label": "Icon",
+                                    "name": "icon",
+                                    "type": "select",
+                                    "instructions": "Choose from the available icons for this offering.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "30",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "shield-tick": "Tick",
+                                        "document": "Document",
+                                        "cloud": "Cloud",
+                                        "jigsaw": "Jigsaw",
+                                        "dollar": "Dollar",
+                                        "globe": "Globe",
+                                        "portrait": "Portrait",
+                                        "twenty": "Twenty",
+                                        "arrows-expand": "Expanding Arrows",
+                                        "trending-up": "Trending Up",
+                                        "heart": "Heart",
+                                        "finger-print": "Finger print",
+                                        "eye": "Eye",
+                                        "document-report": "Document Report",
+                                        "document-add": "Document Add",
+                                        "badge-tick": "Badge Tick",
+                                        "adjustments": "Adjustments",
+                                        "academic-cap": "Academic Cap",
+                                        "star": "Star",
+                                        "check-circle": "Tick in circle",
+                                        "newspaper": "Newspaper",
+                                        "presentation": "Presentation",
+                                        "share": "Share",
+                                        "ticket": "Ticket",
+                                        "user-add": "Add User",
+                                        "user-group": "User group",
+                                        "video": "Video"
+                                    },
+                                    "default_value": "shield-tick",
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "ui": 0,
+                                    "return_format": "value",
+                                    "ajax": 0,
+                                    "placeholder": ""
+                                },
+                                {
+                                    "key": "field_60036dae25658",
+                                    "label": "Title",
+                                    "name": "title",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "70",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_60036dae25659",
+                                    "label": "Details",
+                                    "name": "details",
+                                    "type": "textarea",
+                                    "instructions": "Add the details for this offering.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "maxlength": "",
+                                    "rows": "",
+                                    "new_lines": ""
+                                },
+                                {
+                                    "key": "field_60036dc92565c",
+                                    "label": "Image",
+                                    "name": "image",
+                                    "type": "image",
+                                    "instructions": "Image size: 670px x 510px",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "preview_size": "medium",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": ""
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_60036dae2565a",
+                            "label": "Settings",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_60036dae2565b",
+                            "label": "Spacing",
+                            "name": "spacing",
+                            "type": "select",
+                            "instructions": "Add space before or after this module.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "none": "Remove all space before and after the module",
+                                "before": "Add space before the module",
+                                "after": "Add space after the module",
+                                "both": "Add space before and after the module"
+                            },
+                            "default_value": "none",
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5ffe2aa45e02e": {
+                    "key": "layout_5ffe2aa45e02e",
+                    "name": "video",
+                    "label": "Video",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5ffe2aaf5e02f",
+                            "label": "Video",
+                            "name": "video_embed",
+                            "type": "oembed",
+                            "instructions": "Embed a video into this page. First upload the video to YouTube\/Vimeo account then copy the video link and paste in here. This will allow the video to be played directly within the page.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "width": "",
+                            "height": ""
+                        },
+                        {
+                            "key": "field_5ffe301259d59",
+                            "label": "Spacing",
+                            "name": "spacing",
+                            "type": "select",
+                            "instructions": "Add space before or after this module.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "none": "Remove all space before and after the module",
+                                "before": "Add space before the module",
+                                "after": "Add space after the module",
+                                "both": "Add space before and after the module"
+                            },
+                            "default_value": "none",
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "ajax": 0,
+                            "placeholder": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5ffe2f0af7d75": {
+                    "key": "layout_5ffe2f0af7d75",
+                    "name": "latest_news",
+                    "label": "Latest News",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5ffe2f12f7d76",
+                            "label": "Show Latest News",
+                            "name": "show_news",
+                            "type": "true_false",
+                            "instructions": "Add two recent post from the news to this page.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "Yes",
+                            "ui_off_text": "No"
+                        },
+                        {
+                            "key": "field_5ffe448b4a844",
+                            "label": "Title",
+                            "name": "section_title",
+                            "type": "text",
+                            "instructions": "Edit the title for this module.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Latest News",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5ffe302b59d5a",
+                            "label": "Spacing",
+                            "name": "spacing",
+                            "type": "select",
+                            "instructions": "Add space before or after this module.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "none": "Remove all space before and after the module",
+                                "before": "Add space before the module",
+                                "after": "Add space after the module",
+                                "both": "Add space before and after the module"
+                            },
+                            "default_value": "none",
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "ajax": 0,
+                            "placeholder": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5ffe2f5ef7d77": {
+                    "key": "layout_5ffe2f5ef7d77",
+                    "name": "recent_case_studies",
+                    "label": "Recent Case Studies",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5ffe2f6af7d78",
+                            "label": "Case Studies",
+                            "name": "case_studies",
+                            "type": "relationship",
+                            "instructions": "Add specific case studies to this page.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "case-study"
+                            ],
+                            "taxonomy": "",
+                            "filters": [
+                                "search",
+                                "taxonomy"
+                            ],
+                            "elements": [
+                                "featured_image"
+                            ],
+                            "min": 1,
+                            "max": 4,
+                            "return_format": "object"
+                        },
+                        {
+                            "key": "field_5ffe445e4a843",
+                            "label": "Title",
+                            "name": "section_title",
+                            "type": "text",
+                            "instructions": "Edit the title for this module.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Related Case Studies",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5ffe304259d5b",
+                            "label": "Spacing",
+                            "name": "spacing",
+                            "type": "select",
+                            "instructions": "Add space before or after this module.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "none": "Remove all space before and after the module",
+                                "before": "Add space before the module",
+                                "after": "Add space after the module",
+                                "both": "Add space before and after the module"
+                            },
+                            "default_value": "none",
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "ajax": 0,
+                            "placeholder": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5ffebcd520640": {
+                    "key": "layout_5ffebcd520640",
+                    "name": "team",
+                    "label": "Team",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5ffebd1720643",
+                            "label": "Content",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5ffebd3f27b9b",
+                            "label": "Title",
+                            "name": "title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Our Team … and a few of their favourite things",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5ffebd6227b9c",
+                            "label": "Team Members",
+                            "name": "team_members",
+                            "type": "repeater",
+                            "instructions": "Add team members to this page",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "field_5ffebd7c27b9d",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "block",
+                            "button_label": "Add Team Member",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5ffebd7c27b9d",
+                                    "label": "Name",
+                                    "name": "name",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "0",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5ffebd8a27b9e",
+                                    "label": "Position",
+                                    "name": "position",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_605c0cfe75fdf",
+                                    "label": "LinkedIn",
+                                    "name": "linkedin",
+                                    "type": "url",
+                                    "instructions": "Add a LinkedIn account (optional)",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": ""
+                                },
+                                {
+                                    "key": "field_5ffebd9227b9f",
+                                    "label": "Bio",
+                                    "name": "bio",
+                                    "type": "textarea",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "maxlength": "",
+                                    "rows": 5,
+                                    "new_lines": ""
+                                },
+                                {
+                                    "key": "field_5ffebdb827ba0",
+                                    "label": "Portrait",
+                                    "name": "portrait",
+                                    "type": "image",
+                                    "instructions": "Add the photo. Size 680px wide x 750px high",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "preview_size": "medium",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": ""
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_5ffebd2520644",
+                            "label": "Settings",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5ffebce520642",
+                            "label": "Spacing",
+                            "name": "spacing",
+                            "type": "select",
+                            "instructions": "Add space before or after this module.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "none": "Remove all space before and after the module",
+                                "before": "Add space before the module",
+                                "after": "Add space after the module",
+                                "both": "Add space before and after the module"
+                            },
+                            "default_value": "none",
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "ajax": 0,
+                            "placeholder": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Add Flexible Content Module",
+            "min": "",
+            "max": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "default"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "front-page.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-templates\/contact.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-templates\/product.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": true,
+    "description": "Adds the flexible content modules to the default template",
+    "modified": 1616658718
+}

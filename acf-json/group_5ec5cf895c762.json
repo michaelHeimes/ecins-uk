@@ -1,0 +1,91 @@
+{
+    "key": "group_5ec5cf895c762",
+    "title": "Socials",
+    "fields": [
+        {
+            "key": "field_5ec5cfab71b3a",
+            "label": "Socials",
+            "name": "socials",
+            "type": "repeater",
+            "instructions": "Add social media links to the site",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Add Social Network",
+            "sub_fields": [
+                {
+                    "key": "field_5ec5cfca71b3b",
+                    "label": "Social Network",
+                    "name": "socials_network",
+                    "type": "select",
+                    "instructions": "Choose a social network to add.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "facebook": "Facebook",
+                        "twitter": "Twitter",
+                        "linkedin": "LinkedIn",
+                        "instagram": "Instagram",
+                        "pinterest": "Pinterest",
+                        "youtube": "YouTube",
+                        "vimeo": "Vimeo"
+                    },
+                    "default_value": "facebook",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "array",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_5ec5d08071b3c",
+                    "label": "Social Link",
+                    "name": "socials_link",
+                    "type": "url",
+                    "instructions": "Add the link for this network.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-general-settings"
+            }
+        ]
+    ],
+    "menu_order": 5,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Adds social media links",
+    "modified": 1610614730
+}
