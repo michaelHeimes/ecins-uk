@@ -63,6 +63,25 @@
             "max_height": "",
             "max_size": "",
             "mime_types": ""
+        },
+        {
+            "key": "field_618c0ad2b25b9",
+            "label": "Request eBook Form Embed",
+            "name": "request_ebook_form_embed",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
         }
     ],
     "location": [
@@ -82,5 +101,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "Add details for the Request a Demo form",
-    "modified": 1616205626
+    "modified": 1636567778
 }

@@ -20,6 +20,10 @@ if (have_rows('flexible_content')) :
 
       get_template_part('template-parts/flexible-modules/hero-banner');
 
+    elseif (get_row_layout() == 'hero_slider') :
+
+      get_template_part('template-parts/flexible-modules/hero-slider');
+
     elseif (get_row_layout() == 'video_banner') :
 
       get_template_part('template-parts/flexible-modules/video-banner');

@@ -1,0 +1,98 @@
+{
+    "key": "group_5fd95f7a5692b",
+    "title": "Testimonials",
+    "fields": [
+        {
+            "key": "field_5fd9602920a8a",
+            "label": "Info",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<ul>\r\n<li>Use the person's name for the title of this testimonial.<\/li>\r\n<li>Make sure you also add a featured image. Suggested size: 526 by 388 pixels<\/li>\r\n<li>Use the general content box to save the unedited testimonial if it doesn't fit the character limit for the actual testimonial quote<\/li>\r\n<\/ul>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5fd95fa720a87",
+            "label": "Position",
+            "name": "position",
+            "type": "text",
+            "instructions": "Add the position\/role for this person.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5fd95fcf20a88",
+            "label": "Organisation",
+            "name": "organisation",
+            "type": "text",
+            "instructions": "Add the organisation\/company for this person.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5fd95fef20a89",
+            "label": "Testimonial Quote",
+            "name": "testimonial_quote",
+            "type": "textarea",
+            "instructions": "Add the testimonial quote for this person.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 4,
+            "new_lines": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "testimonials"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Adds all fields for Testimonials CPT",
+    "modified": 1616645317
+}

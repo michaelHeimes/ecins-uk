@@ -1,0 +1,62 @@
+{
+    "key": "group_60361b32e935f",
+    "title": "Request a Demo",
+    "fields": [
+        {
+            "key": "field_60361b432fe62",
+            "label": "Request a Demo Title",
+            "name": "request_demo_title",
+            "type": "text",
+            "instructions": "Add a title for the popup form.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_60361b602fe63",
+            "label": "Request a Demo Intro",
+            "name": "request_demo_intro",
+            "type": "textarea",
+            "instructions": "Add a short intro to the request a demo form.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 4,
+            "new_lines": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-request-demo"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Add details for the Request a Demo popup form",
+    "modified": 1614158749
+}

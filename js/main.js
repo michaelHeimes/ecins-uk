@@ -17,6 +17,20 @@
   }); // $( '.footer__subscribe button' ).modaal({
   // 	content_source: '#subscribe-popup'
   // });
+  
+  
+      $('.hb-slider').slick({
+		infinite: true,
+	    dots: true,
+	    speed: 500,
+	    fade: false,
+	    autoplay: true,
+	    autoplaySpeed: 5000,
+	    arrows: false,
+	    cssEase: 'ease',
+	    rows: 0
+	});
+  
   // ----------------------------------------
   // Smooth Scroll
 
