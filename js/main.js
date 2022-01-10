@@ -83,6 +83,10 @@
 		$('.pum-overlay').css('top', '0');
 	}
 
+	if (window.location.href.indexOf("?domain=") > -1) {
+		$('.pum-overlay').css('top', '0');
+		$('.region-picker').removeClass('show');
+	}
 
 	$('.region-selector').on('click', 'li.uk a', function(){
 		Cookies.set('domain', 'uk', {expires: 30 });
@@ -93,7 +97,7 @@
 	});
 	
 	$('.region-selector').on('click', 'li.au a', function(){
-		Cookies.set('domain', 'us', {expires: 30 });
+		Cookies.set('domain', 'au', {expires: 30 });
 	});  
 
 	$('.country-nav').on('click', 'a', function(){
