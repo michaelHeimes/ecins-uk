@@ -319,6 +319,6 @@ if (function_exists('acf_add_options_page')) {
 // Method 2: Setting.
 function my_acf_init()
 {
-	acf_update_setting('google_api_key', 'AIzaSyDxU2zcv3mxpvV2mRvu3f80RnwDMR5BxQk');
+	acf_update_setting('google_api_key', 'AIzaSyBRP39UGkmzQ24VGHgiAfLADq11QeO9UtI');
 }
 add_action('acf/init', 'my_acf_init');
