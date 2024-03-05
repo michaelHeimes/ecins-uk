@@ -1,5 +1,5 @@
 jQuery( function ( $ ) {
-	console.log("loaded");
+
 	// -----------------------------------------------------------------------------
 	//! Toggle filters display on mobile
 	// -----------------------------------------------------------------------------
@@ -37,9 +37,84 @@ jQuery( function ( $ ) {
 
 			// Bind checkboxes
 			this.watchForChanges();
+			
+			// Check for hash and trigger click on corresponding checkbox
+			this.checkHashAndClick();
+			
+			// Watch for nav click and filter 
+			this.navClickHashAndClick();
 
 			// Get initial posts
 			// this.getPosts();
+		};
+		
+		
+		/*
+		 *	Check for hash and trigger click on corresponding checkbox
+		 */
+		this.checkHashAndClick = function () {
+			var self = this;
+		
+			// Check if the page URL has a hash
+			if (window.location.hash) {
+				var hashValue = window.location.hash.substr(1); // Remove the '#' from the hash
+		
+				// Scroll to the element with the specified ID
+				var targetElement = document.getElementById('resource-grid');
+				
+				console.log($(targetElement).offset().top);
+						
+				// if (targetElement) {
+				// 	$('html, body').animate({
+				// 		scrollTop: $(targetElement).offset().top
+				// 	}, 750);
+				// }
+		
+				$('.filter-box').each(function () {
+					$(this).find('input').each(function () {
+						var dataType = $(this).data('type');
+		
+						// Check if the data-type value matches the hash
+						if (dataType === hashValue) {
+							// Update the URL hash without triggering a page reload
+							window.location.href = window.location.href.split('#')[0] + '#' + hashValue;
+		
+							// Trigger a click on the matched input
+							$(this).click();
+						}
+					});
+				});
+			}
+		};
+		
+		/*
+		 * Check for hash and trigger click on corresponding checkbox and link
+		 */
+		this.navClickHashAndClick = function () {
+			var self = this;
+		
+			$( '#site-navigation a' ).each( function() {
+				$(this).on('click', function() {
+
+					var hashValue = this.hash.substr(1); // Remove the '#' from the hash
+					// Find the matching input
+					var matchingInput = $('.filter-box input[data-type="' + hashValue + '"]');					
+		
+					if (matchingInput.length > 0) {
+						// Trigger a click on the matched input
+						matchingInput.prop('checked', true).trigger('change');
+		
+						// Scroll to the element with the specified ID
+						var targetElement = document.getElementById('resource-grid');
+		
+						if (targetElement) {
+							$('html, body').animate({
+								scrollTop: $(targetElement).offset().top
+							}, 750);
+						}
+					}
+				});
+			});
 		};
 
 

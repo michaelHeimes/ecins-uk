@@ -49,7 +49,7 @@ if ( is_front_page() || is_home() ) {
 	$resource_grid_classes[] = 'front-page';
 }
 ?>
-<div class="<?php echo implode( ' ', $resource_grid_classes ); ?>">
+<div id="resource-grid" class="<?php echo implode( ' ', $resource_grid_classes ); ?>">
 	<div class="content-grid--inner">
 		<div class="content-grid--filters-toggle">
 			<button type="button" class="btn secondary">Filter Resources</button>
@@ -60,7 +60,7 @@ if ( is_front_page() || is_home() ) {
 				<div class="filter-values">
 					<?php foreach ( $resource_types as $type ) { ?>
 						<div class="filter-checkbox">
-							<input type="checkbox" value="<?php echo $type->term_id; ?>" id="filter-resource-type-<?php echo $type->slug; ?>">
+							<input type="checkbox" value="<?php echo $type->term_id; ?>" id="filter-resource-type-<?php echo $type->slug; ?>" data-type="<?php echo $type->slug; ?>">
 							<label for="filter-resource-type-<?php echo $type->slug; ?>">
 								<?php echo $type->name; ?>
 							</label>
