@@ -95,14 +95,15 @@ function ecins_get_resources( $data ) {
 		$permalink    = get_the_permalink( get_the_ID() );
 		$thumbnail_id = $default_cover_image; // default cover image.
 		$gated_form   = get_field('resource_gravity_form', get_the_ID());
+		$embedded_form = get_field('embedded_form', get_the_ID());
 
-		if (get_field('resource_file', get_the_ID()) && !$gated_form) {
+		if (get_field('resource_file', get_the_ID()) && !$gated_form && !$embedded_form) {
 			$resource_file = get_field('resource_file', get_the_ID());
 			$permalink     = $resource_file ? wp_get_attachment_url($resource_file) : '#';
-		}
-
-		if (get_field('resource_link', get_the_ID())) {
+		} elseif (get_field('resource_link', get_the_ID()) && $embedded_form ) {
 			$permalink = get_field('resource_link', get_the_ID());
+		} else {
+			$permalink = get_the_permalink( get_the_ID() );
 		}
 
 		if (get_field('resource_cover_image', get_the_ID())) {
@@ -133,4 +134,9 @@ function ecins_get_resources( $data ) {
 	);
 
 	return json_encode( $out );
+	
+	if ( is_wp_error( $query ) ) {
+		return json_encode( array( 'error' => $query->get_error_message() ) );
+	}
+
 }
